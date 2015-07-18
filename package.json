@@ -1,0 +1,25 @@
+{
+  "name": "node-s3-public-url",
+  "version": "1.0.0",
+  "description": "Convert string to s3 url compatible",
+  "main": "index.js",
+  "scripts": {
+    "test": "env mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/indrasantosa/node-s3-public-url.git"
+  },
+  "keywords": [
+    "node",
+    "s3",
+    "url",
+    "encode"
+  ],
+  "author": "Indra Santosa (indrasantosa90@gmail.com)",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/indrasantosa/node-s3-public-url/issues"
+  },
+  "homepage": "https://github.com/indrasantosa/node-s3-public-url"
+}
