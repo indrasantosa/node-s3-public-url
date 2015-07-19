@@ -5,6 +5,7 @@
 function publicS3URI(string) {
 	return encodeURIComponent(string)
 		.replace(/%20/img, '+')
+		.replace(/%2F/img, '/')
     .replace(/\"/img, "%22")
     .replace(/\#/img, "%23")
     .replace(/\$/img, "%24")
