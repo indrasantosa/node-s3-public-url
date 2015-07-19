@@ -11,6 +11,8 @@ function publicS3URI(string) {
     .replace(/\$/img, "%24")
     .replace(/\&/img, "%26")
     .replace(/\'/img, "%27")
+		.replace(/\(/img, "%28")
+    .replace(/\)/img, "%29")
     .replace(/\,/img, "%2C")
     .replace(/\:/img, "%3A")
     .replace(/\;/img, "%3B")
