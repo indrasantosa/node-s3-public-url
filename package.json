@@ -1,6 +1,6 @@
 {
   "name": "node-s3-public-url",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Convert string to s3 url compatible",
   "main": "index.js",
   "scripts": {
