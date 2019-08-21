@@ -10,12 +10,13 @@ describe('node-s3-public-url', function() {
 				output: 'a!%40%23%24%%5E*%28%29_%2B-%3D%7B%7D%7C%5B%5D%5C%22%27%3C%3E%3F%2C%3A%3B.mp4'
 			},
 			'should not covert percentage %': {
-				input: '%.mp4',
-				output: '%.mp4'
+				input: 'f9ee1c8e6bdceba80fa2_F%2B38.pdf',
+				output: 'f9ee1c8e6bdceba80fa2_F%2B38.pdf'
 			},
 			'should not covert percentage25 %25': {
-				input: '%25.mp4',
-				output: '%25.mp4'
+				
+				input: '%25.pdf',
+				output: '%25.pdf'
 			},
 			'should not convert slash \/': {
 				input: '/',
