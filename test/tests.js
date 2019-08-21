@@ -7,7 +7,15 @@ describe('node-s3-public-url', function() {
 		var tests = {
 			'should return string when asked to convert': {
 				input: 'a!@#$%^*()_+-={}|[]\\"\'<>?,:;.mp4',
-				output: 'a!%40%23%24%25%5E*%28%29_%2B-%3D%7B%7D%7C%5B%5D%5C%22%27%3C%3E%3F%2C%3A%3B.mp4'
+				output: 'a!%40%23%24%%5E*%28%29_%2B-%3D%7B%7D%7C%5B%5D%5C%22%27%3C%3E%3F%2C%3A%3B.mp4'
+			},
+			'should not covert percentage %': {
+				input: '%.mp4',
+				output: '%.mp4'
+			},
+			'should not covert percentage25 %25': {
+				input: '%25.mp4',
+				output: '%25.mp4'
 			},
 			'should not convert slash \/': {
 				input: '/',
